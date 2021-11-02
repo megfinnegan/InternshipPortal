@@ -33,10 +33,9 @@
                       duration-200 
                       ease-in-out
                       "
-                      v-on:change="updateName"
-                      required=""
                       placeholder="Name"
                       type="text" 
+                      @input="nameChange($event.target.value)"
                       id="input-name" 
                       v-model="inputName"
                       />
@@ -67,10 +66,10 @@
                       duration-200 
                       ease-in-out
                       "
-                      v-on:change="updateEmail"
-                      required=""
                       placeholder="Email"
                       type="email" 
+                      @input="emailChange($event.target.value)"
+
                       id="input-email" 
                       v-model="inputEmail"
                       />
@@ -103,9 +102,8 @@
                           duration-200 
                           ease-in-out
                         "
-                        v-on:change="updateMessage"
-                        required=""
                         placeholder="Message"
+                        @input="messageChange($event.target.value)"
                         id="input-message" 
                         v-model="inputMessage"
                       >
@@ -142,7 +140,7 @@
 </template>
 
 <script>
-//import { defineComponent } from '@vue/composition-api'
+
 
 export default {
     name: "ContactForm", 
@@ -158,38 +156,17 @@ export default {
 
     methods: {
 
-
-
-       /* 
-       Uses separate components
-
-        updateName(newName){ 
-          this.userName = newName; 
-          console.log(this.userName); 
+        nameChange(value){ 
+          this.userName = value; 
         },
-        upateEmail(newEmail){
-          this.userEmail = newEmail; 
-          console.log(this.userEmail);
+
+        emailChange(value){
+          this.userEmail = value; 
         }, 
-        updateMessage(newMessage){
-          this.userMessage = newMessage; 
-          console.log(this.userMessage); 
+
+        messageChange(value){
+          this.userMessage = value; 
         },
-        */
-
-        /*
-        This way needs props! 
-
-        nameChange(){
-          this.nameChanged(this.userName); 
-        }, 
-        emailChange(){
-          this.emailChanged(this.userEmail); 
-        }, 
-        nameChange(){
-          this.messageChanged(this.userMessage); 
-        }, 
-        */
 
         submitForm() {
           const body = {
