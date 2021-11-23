@@ -1,261 +1,56 @@
 <template>
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap -m-5">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="absolute top-20 right-20">
-            <div class="p-4 lg:w-1/10">
-              <div
-                class="
-                  h-full
-                  bg-yellow-100 bg-opacity-100
-                  p-20
-                  rounded-lg
-                  overflow-hidden
-                  text-center
-                  relative
-                "
-              >
-                <h1
-                  class="
-                    title-font
-                    sm:text-2xl
-                    text-xl
-                    font-bold
-                    text-red-700
-                    mb-3
-                  "
-                >
-                  Business Requests
-                </h1>
-                <br />
-                <div class="flex flex-wrap -m-4">
-                  <div class="p-4 lg:w-1/10">
-                    <button
-                      class="
-                        bg-red-500
-                        hover:bg-red-600
-                        text-white
-                        sm:text-xl
-                        text-xl
-                        font-bold
-                        shadow-lg
-                        px-8
-                        pt-16
-                        pb-24
-                        rounded-lg
-                      "
-                    >
-                      Pending
-                    </button>
+  <section>
+    <div class="min-h-screen"> 
+      <div class="grid grid-cols-5 grid-rows-2 gap-3 p-5">
+        <div class="col-start-1 bg-gray-100 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">15 Total Listings</div> 
+        <div class="col-start-2 col-span-4 row-start-1 row-end-3 bg-gray-100 text-gray-500 text-lg font-bold text-center p-10 pb-20 rounded-lg">Positions Density</div>
+        <div class="relative col-start-2 col-span-4 row-start-3 row-end-6 bg-gray-100 text-gray-500 text-lg font-bold text-center py-0 px-10 rounded-lg">
+            
+            <div class="min-h-screen flex items-center">
+              <div class="flex overflow-x-scroll">
+                <div class="flex flex-nowrap">
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
                   </div>
-                  <div class="p-4 lg:w-1/8">
-                    <button
-                      class="
-                        bg-red-500
-                        hover:bg-red-600
-                        text-white
-                        sm:text-xl
-                        text-xl
-                        font-bold
-                        shadow-lg
-                        px-8
-                        pt-16
-                        pb-24
-                        rounded-lg
-                      "
-                    >
-                      Accepted
-                    </button>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
                   </div>
-                  <div class="p-4 lg:w-1/8">
-                    <button
-                      class="
-                        bg-red-500
-                        hover:bg-red-600
-                        text-white
-                        sm:text-xl
-                        text-xl
-                        font-bold
-                        shadow-lg
-                        px-8
-                        pt-16
-                        pb-24
-                        rounded-lg
-                      "
-                    >
-                      Denied
-                    </button>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                   <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">                  
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
+                  </div>
+                  <div class="inline-block px-3">
+                    <div class="bg-gray-400 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Pending Listings</div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
         </div>
-
-        <!--student info-->
-
-        <div class="container px-8 py-20 mx-auto">
-          <div class="absolute top-20 left-20">
-            <div class="p-4 lg:w-1/8">
-              <div
-                class="
-                  h-full
-                  bg-yellow-100 bg-opacity-100
-                  px-20
-                  py-10
-                  rounded-lg
-                  overflow-hidden
-                  text-center
-                  align-text-top
-                  relative
-                "
-              >
-                <h1
-                  class="
-                    title-font
-                    sm:text-2xl
-                    text-xl
-                    font-bold
-                    text-red-700
-                    mb-3
-                  "
-                >
-                  Student Information
-                </h1>
-                <br />
-                <div class="flex flex-wrap -m-4">
-                  <div
-                    class="
-                      h-full
-                      space-x-4
-                      bg-yellow-200 bg-opacity-100
-                      p-5
-                      rounded-lg
-                      overflow-hidden
-                      text-center
-                      relative
-                    "
-                  >
-                    <h1
-                      class="
-                        title-font
-                        sm:text-lg
-                        text-lg
-                        font-bold
-                        text-red-700
-                        mb-3
-                      "
-                    >
-                      Weekly-Check in
-                    </h1>
-                    <div class="p-4 lg:w-1/8">
-                      <button
-                        class="
-                          bg-red-500
-                          hover:bg-red-600
-                          text-white
-                          sm:text-xl
-                          text-xl
-                          font-bold
-                          shadow-lg
-                          px-8
-                          pt-16
-                          pb-20
-                          rounded-lg
-                        "
-                      >
-                        Pending
-                      </button>
-                    </div>
-                    <div class="p-4 lg:w-1/8">
-                      <button
-                        class="
-                          bg-red-500
-                          hover:bg-red-600
-                          text-white
-                          sm:text-xl
-                          text-xl
-                          font-bold
-                          shadow-lg
-                          px-8
-                          pt-16
-                          pb-20
-                          rounded-lg
-                        "
-                      >
-                        Reviewed
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    class="
-                      h-full
-                      space-x-4
-                      bg-yellow-200 bg-opacity-100
-                      p-5
-                      rounded-lg
-                      overflow-hidden
-                      text-center
-                      relative
-                    "
-                  >
-                    <h1
-                      class="
-                        title-font
-                        sm:text-lg
-                        text-lg
-                        font-bold
-                        text-red-700
-                        mb-3
-                      "
-                    >
-                      Internships
-                    </h1>
-                    <div class="p-4 lg:w-1/8">
-                      <button
-                        class="
-                          bg-red-500
-                          hover:bg-red-600
-                          text-white
-                          sm:text-xl
-                          text-xl
-                          font-bold
-                          shadow-lg
-                          px-8
-                          pt-16
-                          pb-20
-                          rounded-lg
-                        "
-                      >
-                        Pending
-                      </button>
-                    </div>
-                    <div class="p-4 lg:w-1/8">
-                      <button
-                        class="
-                          bg-red-500
-                          hover:bg-red-600
-                          text-white
-                          sm:text-xl
-                          text-xl
-                          font-bold
-                          shadow-lg
-                          px-8
-                          pt-16
-                          pb-20
-                          rounded-lg
-                        "
-                      >
-                        Reviewed
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="col-start-1 row-start-2 bg-gray-100 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Most Viewed Company</div>
+        <div class="col-start-1 row-start-3 bg-gray-100 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">Software Engineer: Most Viewed Position</div>
+        <div class="col-start-1 row-start-4 bg-gray-100 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">20 Total Monthly Visits</div>
+        <div class="col-start-1 row-start-5 bg-gray-100 text-gray-500 text-lg font-bold text-center p-10 rounded-lg">5 Pending Contact Requests</div>
+        
       </div>
     </div>
   </section>
