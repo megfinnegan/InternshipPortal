@@ -1,12 +1,12 @@
 <template>
-  <div class="sm:items-center sm:flex sm:justify-between mx-48 mt-12">
-    <div class="">
+  <div class="sm:items-center sm:flex sm:justify-center space-x-16 mx-48 mt-12">
+    
     <form action="" class="flex mt-2 sm:mt-0">
       <div class="">
         <InboxFilterDropdown :changeFilter="updateFilter" />
       </div>
     </form>
-    </div>
+    <div class="flex justify-center items-center">
     <div class="relative pt-10 mx-auto text-gray-600">
       <input
         class="border-2 border-gray-300 bg-white h-10 w-72 px-5 rounded-lg text-sm focus:outline-none"
@@ -37,7 +37,9 @@
         </svg>
       </button>
     </div>
+    </div>
   </div>
+  
   <div class="items-center">
     <div class="mt-14">
       <ContactInbox :messages="filtered_messages" />
